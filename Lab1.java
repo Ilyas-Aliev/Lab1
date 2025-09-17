@@ -29,7 +29,7 @@ public class Lab1 {
         double v1 = Math.pow((0.5 * (Math.log(Math.pow(Math.sin(x1), 2)) - 0.25)), 3);
         double v2 = 1 - Math.pow(Math.E, Math.tan(Math.log(Math.abs(x1))));
         double v3 = v1 * v2;
-        double v4 = (Math.sin(x1) * (3.0 / 4.0) * Math.asin((x1 - 2.5) / 21.0) - 4) / 2.0;
+        double v4 = (Math.sin(x1) * (3.0 / 4.0) * Math.asin(((x1 - 2.5) / 21.0) - 4) / 1) / 2.0;
         double v = Math.pow(v3, v4);
         return v;
     }
@@ -47,7 +47,7 @@ public class Lab1 {
         Random random = new Random();
         long[] l = new long[7];
         for (int i = 6; i >= 0; i--) {
-            l[i] = (i + 1) * 2 + 2;
+            l[7 - i - 1] = (i + 1) * 2 + 2;
         }
 
         // for (int i = 0; i < 7; i++) {
